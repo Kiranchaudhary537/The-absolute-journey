@@ -247,6 +247,12 @@ export const processData = async () => {
 
   const response: MenuItem[] = [
     {
+      id: "small-luxury-group",
+      name: "SMALL LUXURY GROUP TOURS",
+      weblink: "/small-luxury-group",
+      hasDropdown: false,
+    },
+    {
       id: "absolute-india",
       name: "ABSOLUTE INDIA",
       hasDropdown: true,

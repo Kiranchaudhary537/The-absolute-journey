@@ -11,8 +11,11 @@ app.use(
   cors({
     origin: [
       "https://the-absolute-journey.webflow.io",
-      "http://localhost",
       "https://www.theabsolutejourney.com",
+      // Allow localhost from any port
+      /^http:\/\/localhost(:\d+)?$/, // Regex for http://localhost with optional port
+      /^http:\/\/127\.0\.0\.1(:\d+)?$/, // Also allow 127.0.0.1 with any port
+      /^http:\/\/\[::1\](:\d+)?$/, // IPv6 localhost
     ],
   })
 );
